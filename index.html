@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Linking Stylesheets -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- Adding Title -->
+    <title>Calculator App</title>
+  </head>
+  <body>
+    <div id="container">
+      <!-- Simple Calculator -->
+      <div id="simple-calc" class="calc">
+        <!-- Simple calculator heading -->
+        <div id="simple-calc-head" class="head"><h1>Simple Calculator</h1></div>
+
+        <!-- Input area for simple calculator -->
+        <div id="display-area-simple-calc" class="display-area">
+          <input type="text" id="simple-calc-display" autofocus />
+        </div>
+
+        <!-- Keys for simple calculator -->
+        <div id="calc-keys">
+          <div id="delete" class="key">D</div>
+          <div id="erase" class="key">
+            <i class="bi bi-arrow-left"></i>
+          </div>
+          <div id="divide" class="key val">/</div>
+          <div id="multiply" class="key val">*</div>
+          <div id="seven" class="key val num">7</div>
+          <div id="eight" class="key val num">8</div>
+          <div id="nine" class="key val num">9</div>
+          <div id="subtract" class="key val">-</div>
+          <div id="four" class="key val num">4</div>
+          <div id="five" class="key val num">5</div>
+          <div id="six" class="key val num">6</div>
+          <div id="add" class="key val">+</div>
+          <div id="one" class="key val num">1</div>
+          <div id="two" class="key val num">2</div>
+          <div id="three" class="key val num">3</div>
+          <div id="equal" class="key">=</div>
+          <div id="zero" class="key val num">0</div>
+          <div id="decimal" class="key val">.</div>
+        </div>
+      </div>
+
+      <!-- Weight Calculator -->
+      <div id="weight-calc" class="calc">
+        <!-- Weight calculator heading -->
+        <div id="weight-calc-head" class="head"><h1>Weight Calculator</h1></div>
+
+        <!-- Input area for weight calculator -->
+        <div id="display-area-weight-calc" class="display-area">
+          <div id="display-area-weight-calc-head">
+            Enter your weight in Kilograms (Kg):
+          </div>
+
+          <input type="number" id="weight-calc-display" min="0 " />
+
+          <button type="submit">Calculate</button>
+        </div>
+
+        <!-- Displaying weight on different planets -->
+        <div id="planet-weight">
+          <div id="planet-weight-head">Your weight on different planets is</div>
+
+          <div id="weight-display"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Adding Scripts -->
+    <script src="./js/simpleCalc.js"></script>
+    <script src="./js/weightCalc.js"></script>
+  </body>
+</html>
